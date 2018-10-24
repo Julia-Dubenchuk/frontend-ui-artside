@@ -39,7 +39,11 @@ h2{
 }
 
 p{
-    margin: 15px 0 0;
+    margin: 0 0 15px;
+}
+
+p:last-of-type{
+    margin: 0;
 }
 
 ul{
@@ -70,6 +74,7 @@ a{
     align-items: flex-end;
     padding-top: 44px;
     box-sizing: border-box;
+    margin-bottom: 100px;
 }
 
 .header img{
@@ -89,33 +94,17 @@ a{
 }
 
 .header .phone .font-phone{
+    display: block;
     font-size: 30px;
 }
 
+/* ===============================Main menu=========================== */
 
-
-/*============================Content=============================*/
-
-.content{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    margin: 100px 0;
-    padding-bottom: 56px;
+.main-menu .menu-items{
+    display: block;
 }
 
-.content:after {
-    display: table;
-    clear: both;
-    content: '';
-}
-
-.content .main-menu .menu-items{
-    display: inline-block;
-}
-
-.content .menu-item a{
+.main-menu .menu-item a{
     font-family: 'DINCyr', 'Arial', sans-serif;
     font-size: 40px;
     line-height: 38px;
@@ -127,18 +116,39 @@ a{
     vertical-align: middle;
 }
 
-.content .menu-item a:hover{
+.main-menu .menu-item a:hover{
     background-color: #707070;
     color: #ffffff;
     cursor: pointer;
+}
+
+/*============================Content=============================*/
+
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-bottom: 56px;
+}
+
+.content:after {
+    display: table;
+    clear: both;
+    content: '';
 }
 
 .content .page-main{
     margin-left: 100px;
 }
 
+.page-main .article:first-child{
+    margin-bottom: 44px;
+}
+
 .content .page-main .teams{
-    margin: 44px 0;
+    margin-bottom: 44px;
 }
 
 .page-main .teams{
@@ -177,7 +187,7 @@ a{
 
 .page-main .persons .name{
     padding-left: 12px;
-    max-width: 136px;
+    width: 136px;
 }
 
     /*==============================Footer===============================*/
@@ -187,7 +197,7 @@ a{
     margin: -100px auto 0;
     height: 100px;
     border-top: 1px solid #ababab;
-    padding: 40px 0;
+    padding-top: 40px;
     box-sizing: border-box;
     font-family: 'Tahoma', 'Arial', sans-serif;
     color:  #707070;
