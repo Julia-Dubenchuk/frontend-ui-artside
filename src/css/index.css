@@ -139,8 +139,8 @@ a{
     content: '';
 }
 
-.content .page-main{
-    margin-left: 100px;
+.sidebar{
+    margin-right: 100px;
 }
 
 .page-main .article:first-child{
@@ -154,6 +154,7 @@ a{
 .page-main .teams{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .page-main .teams .photo{
@@ -162,6 +163,7 @@ a{
     background-color: black;
     position: relative;
     overflow: hidden;
+    margin-right: 12px;
 }
 
 .page-main .teams img{
@@ -186,7 +188,6 @@ a{
 }
 
 .page-main .persons .name{
-    padding-left: 12px;
     width: 136px;
 }
 
