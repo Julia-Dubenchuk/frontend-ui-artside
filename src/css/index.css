@@ -161,8 +161,12 @@ a{
     margin-bottom: 22px;
 }
 
-.page-main .team:not(:nth-child(3n+1)){
+.page-main .team{
     margin-left: 18px;
+}
+
+.page-main .team:nth-child(3n+1){
+    margin-left: 0;
 }
 
 .page-main .teams .photo{
