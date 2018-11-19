@@ -152,16 +152,14 @@ a{
 }
 
 .page-main .teams{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: inline-block;
 }
 
 .page-main .team{
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
     margin-bottom: 22px;
-}
-
-.page-main .team{
     margin-left: 18px;
 }
 
@@ -197,10 +195,6 @@ a{
 
 .page-main .persons li:last-child{
     margin-bottom: 0;
-}
-
-.page-main .persons .name{
-    width: 136px;
 }
 
     /*==============================Footer===============================*/
